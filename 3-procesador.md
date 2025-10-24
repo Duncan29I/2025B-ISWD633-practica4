@@ -10,7 +10,25 @@ Asignar núcleos de CPU específicos:
 ```
 
 **¿Como saber el numero de procesadores virtuales que tiene una máquina?**
-## COMPLETAR
+Método 1: Con el Administrador de tareas
+
+1. Presiona Ctrl + Shift + Esc para abrir el Administrador de tareas.
+
+2. Ve a la pestaña Rendimiento → CPU.
+
+3. En la parte inferior derecha verás:
+
+Núcleos (Cores)
+
+Procesadores lógicos (Logical processors) → 🔹 Este número son los procesadores virtuales (vCPUs).
+
+## Ejemplo: Si ves “4 núcleos y 8 procesadores lógicos”, tu máquina tiene 8 procesadores virtuales.
+
+Método 2: Con línea de comandos (CMD o PowerShell)
+
+Abre PowerShell o CMD y escribe:
+
+wmic cpu get NumberOfCores,NumberOfLogicalProcessors
 
 ## Ejemplos
 _Puedes copiar y ejecutar directamente cada uno de los comandos_
