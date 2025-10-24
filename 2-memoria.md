@@ -30,13 +30,11 @@ docker run -d --name server-nginx --memory=300m --memory-swap=1g nginx:alpine
 Teniendo en cuentos los siguientes datos:
 
 --memory=300m = 300 MB de RAM máxima
-...
-...
+
 --memory-swap=1g = 1 GB = 1024 MB de memoria total (RAM + swap)
 
 Para conocer la memoria swap máxima disponible utilizamos la siguiente fórmula:
-...
-...
+
 Memoria swap máxima = memory-swap – memory
 
 Memoria swap máxima = 1024 MB - 300 MB = 724 MB
